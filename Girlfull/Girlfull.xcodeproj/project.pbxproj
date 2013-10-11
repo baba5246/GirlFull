@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEFAE75C1807F1A70021F2BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFAE75B1807F1A70021F2BC /* UIKit.framework */; };
+		FEFAE75E1807F1A70021F2BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFAE75D1807F1A70021F2BC /* Foundation.framework */; };
+		FEFAE7601807F1A70021F2BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFAE75F1807F1A70021F2BC /* CoreGraphics.framework */; };
+		FEFAE7661807F1A70021F2BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE7641807F1A70021F2BC /* InfoPlist.strings */; };
+		FEFAE7681807F1A70021F2BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFAE7671807F1A70021F2BC /* main.m */; };
+		FEFAE76C1807F1A70021F2BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFAE76B1807F1A70021F2BC /* AppDelegate.m */; };
+		FEFAE76E1807F1A70021F2BC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE76D1807F1A70021F2BC /* Default.png */; };
+		FEFAE7701807F1A70021F2BC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE76F1807F1A70021F2BC /* Default@2x.png */; };
+		FEFAE7721807F1A70021F2BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE7711807F1A70021F2BC /* Default-568h@2x.png */; };
+		FEFAE7831807F1A70021F2BC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFAE7821807F1A70021F2BC /* SenTestingKit.framework */; };
+		FEFAE7841807F1A70021F2BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFAE75B1807F1A70021F2BC /* UIKit.framework */; };
+		FEFAE7851807F1A70021F2BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFAE75D1807F1A70021F2BC /* Foundation.framework */; };
+		FEFAE78D1807F1A70021F2BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE78B1807F1A70021F2BC /* InfoPlist.strings */; };
+		FEFAE7901807F1A70021F2BC /* GirlfullTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFAE78F1807F1A70021F2BC /* GirlfullTests.m */; };
+		FEFAE79B1807F2E10021F2BC /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFAE79A1807F2E10021F2BC /* TopViewController.m */; };
+		FEFAE79E1807F2F80021F2BC /* FuruViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFAE79D1807F2F80021F2BC /* FuruViewController.m */; };
+		FEFAE7A11807F3120021F2BC /* EndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFAE7A01807F3120021F2BC /* EndViewController.m */; };
+		FEFAE7A5180805260021F2BC /* GirlPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFAE7A4180805260021F2BC /* GirlPlayer.m */; };
+		FEFAE7A71808068D0021F2BC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFAE7A61808068D0021F2BC /* AVFoundation.framework */; };
+		FEFAE7AF18081F3B0021F2BC /* voice1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE7AC18081F3B0021F2BC /* voice1.mp3 */; };
+		FEFAE7B018081F3B0021F2BC /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE7AD18081F3B0021F2BC /* end.mp3 */; };
+		FEFAE7B118081F3B0021F2BC /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE7AE18081F3B0021F2BC /* test.mp3 */; };
+		FEFAE7C0180829160021F2BC /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE7B3180829160021F2BC /* box.png */; };
+		FEFAE7C2180829160021F2BC /* end.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE7B5180829160021F2BC /* end.png */; };
+		FEFAE7C4180829160021F2BC /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE7B7180829160021F2BC /* heart.png */; };
+		FEFAE7C6180829160021F2BC /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE7B9180829160021F2BC /* girl.png */; };
+		FEFAE7C8180829160021F2BC /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE7BB180829160021F2BC /* test.png */; };
+		FEFAE7C9180829160021F2BC /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFAE7BC180829160021F2BC /* title.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEFAE7861807F1A70021F2BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEFAE7501807F1A70021F2BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEFAE7571807F1A70021F2BC;
+			remoteInfo = Girlfull;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FEFAE7581807F1A70021F2BC /* Girlfull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Girlfull.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFAE75B1807F1A70021F2BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FEFAE75D1807F1A70021F2BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEFAE75F1807F1A70021F2BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FEFAE7631807F1A70021F2BC /* Girlfull-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Girlfull-Info.plist"; sourceTree = "<group>"; };
+		FEFAE7651807F1A70021F2BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEFAE7671807F1A70021F2BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEFAE7691807F1A70021F2BC /* Girlfull-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Girlfull-Prefix.pch"; sourceTree = "<group>"; };
+		FEFAE76A1807F1A70021F2BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEFAE76B1807F1A70021F2BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEFAE76D1807F1A70021F2BC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FEFAE76F1807F1A70021F2BC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FEFAE7711807F1A70021F2BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FEFAE7811807F1A70021F2BC /* GirlfullTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GirlfullTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFAE7821807F1A70021F2BC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FEFAE78A1807F1A70021F2BC /* GirlfullTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GirlfullTests-Info.plist"; sourceTree = "<group>"; };
+		FEFAE78C1807F1A70021F2BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEFAE78E1807F1A70021F2BC /* GirlfullTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GirlfullTests.h; sourceTree = "<group>"; };
+		FEFAE78F1807F1A70021F2BC /* GirlfullTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GirlfullTests.m; sourceTree = "<group>"; };
+		FEFAE7991807F2E10021F2BC /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
+		FEFAE79A1807F2E10021F2BC /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
+		FEFAE79C1807F2F80021F2BC /* FuruViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuruViewController.h; sourceTree = "<group>"; };
+		FEFAE79D1807F2F80021F2BC /* FuruViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuruViewController.m; sourceTree = "<group>"; };
+		FEFAE79F1807F3120021F2BC /* EndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndViewController.h; sourceTree = "<group>"; };
+		FEFAE7A01807F3120021F2BC /* EndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndViewController.m; sourceTree = "<group>"; };
+		FEFAE7A21807FD580021F2BC /* AppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		FEFAE7A3180805250021F2BC /* GirlPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GirlPlayer.h; sourceTree = "<group>"; };
+		FEFAE7A4180805260021F2BC /* GirlPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GirlPlayer.m; sourceTree = "<group>"; };
+		FEFAE7A61808068D0021F2BC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FEFAE7AC18081F3B0021F2BC /* voice1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice1.mp3; sourceTree = "<group>"; };
+		FEFAE7AD18081F3B0021F2BC /* end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = end.mp3; sourceTree = "<group>"; };
+		FEFAE7AE18081F3B0021F2BC /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
+		FEFAE7B3180829160021F2BC /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		FEFAE7B5180829160021F2BC /* end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = end.png; sourceTree = "<group>"; };
+		FEFAE7B7180829160021F2BC /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		FEFAE7B9180829160021F2BC /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl.png; sourceTree = "<group>"; };
+		FEFAE7BB180829160021F2BC /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		FEFAE7BC180829160021F2BC /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEFAE7551807F1A70021F2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFAE7A71808068D0021F2BC /* AVFoundation.framework in Frameworks */,
+				FEFAE75C1807F1A70021F2BC /* UIKit.framework in Frameworks */,
+				FEFAE75E1807F1A70021F2BC /* Foundation.framework in Frameworks */,
+				FEFAE7601807F1A70021F2BC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFAE77D1807F1A70021F2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFAE7831807F1A70021F2BC /* SenTestingKit.framework in Frameworks */,
+				FEFAE7841807F1A70021F2BC /* UIKit.framework in Frameworks */,
+				FEFAE7851807F1A70021F2BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEFAE74F1807F1A70021F2BC = {
+			isa = PBXGroup;
+			children = (
+				FEFAE7611807F1A70021F2BC /* Girlfull */,
+				FEFAE7881807F1A70021F2BC /* GirlfullTests */,
+				FEFAE75A1807F1A70021F2BC /* Frameworks */,
+				FEFAE7591807F1A70021F2BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEFAE7591807F1A70021F2BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEFAE7581807F1A70021F2BC /* Girlfull.app */,
+				FEFAE7811807F1A70021F2BC /* GirlfullTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEFAE75A1807F1A70021F2BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEFAE7A61808068D0021F2BC /* AVFoundation.framework */,
+				FEFAE75B1807F1A70021F2BC /* UIKit.framework */,
+				FEFAE75D1807F1A70021F2BC /* Foundation.framework */,
+				FEFAE75F1807F1A70021F2BC /* CoreGraphics.framework */,
+				FEFAE7821807F1A70021F2BC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEFAE7611807F1A70021F2BC /* Girlfull */ = {
+			isa = PBXGroup;
+			children = (
+				FEFAE76A1807F1A70021F2BC /* AppDelegate.h */,
+				FEFAE76B1807F1A70021F2BC /* AppDelegate.m */,
+				FEFAE7A21807FD580021F2BC /* AppConstants.h */,
+				FEFAE7991807F2E10021F2BC /* TopViewController.h */,
+				FEFAE79A1807F2E10021F2BC /* TopViewController.m */,
+				FEFAE79C1807F2F80021F2BC /* FuruViewController.h */,
+				FEFAE79D1807F2F80021F2BC /* FuruViewController.m */,
+				FEFAE7A3180805250021F2BC /* GirlPlayer.h */,
+				FEFAE7A4180805260021F2BC /* GirlPlayer.m */,
+				FEFAE79F1807F3120021F2BC /* EndViewController.h */,
+				FEFAE7A01807F3120021F2BC /* EndViewController.m */,
+				FEFAE7B2180829160021F2BC /* Images */,
+				FEFAE7AB18081F3B0021F2BC /* Sounds */,
+				FEFAE7621807F1A70021F2BC /* Supporting Files */,
+			);
+			path = Girlfull;
+			sourceTree = "<group>";
+		};
+		FEFAE7621807F1A70021F2BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEFAE7631807F1A70021F2BC /* Girlfull-Info.plist */,
+				FEFAE7641807F1A70021F2BC /* InfoPlist.strings */,
+				FEFAE7671807F1A70021F2BC /* main.m */,
+				FEFAE7691807F1A70021F2BC /* Girlfull-Prefix.pch */,
+				FEFAE76D1807F1A70021F2BC /* Default.png */,
+				FEFAE76F1807F1A70021F2BC /* Default@2x.png */,
+				FEFAE7711807F1A70021F2BC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEFAE7881807F1A70021F2BC /* GirlfullTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEFAE78E1807F1A70021F2BC /* GirlfullTests.h */,
+				FEFAE78F1807F1A70021F2BC /* GirlfullTests.m */,
+				FEFAE7891807F1A70021F2BC /* Supporting Files */,
+			);
+			path = GirlfullTests;
+			sourceTree = "<group>";
+		};
+		FEFAE7891807F1A70021F2BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEFAE78A1807F1A70021F2BC /* GirlfullTests-Info.plist */,
+				FEFAE78B1807F1A70021F2BC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEFAE7AB18081F3B0021F2BC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FEFAE7AC18081F3B0021F2BC /* voice1.mp3 */,
+				FEFAE7AD18081F3B0021F2BC /* end.mp3 */,
+				FEFAE7AE18081F3B0021F2BC /* test.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		FEFAE7B2180829160021F2BC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FEFAE7B3180829160021F2BC /* box.png */,
+				FEFAE7B5180829160021F2BC /* end.png */,
+				FEFAE7B7180829160021F2BC /* heart.png */,
+				FEFAE7B9180829160021F2BC /* girl.png */,
+				FEFAE7BB180829160021F2BC /* test.png */,
+				FEFAE7BC180829160021F2BC /* title.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEFAE7571807F1A70021F2BC /* Girlfull */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFAE7931807F1A70021F2BC /* Build configuration list for PBXNativeTarget "Girlfull" */;
+			buildPhases = (
+				FEFAE7541807F1A70021F2BC /* Sources */,
+				FEFAE7551807F1A70021F2BC /* Frameworks */,
+				FEFAE7561807F1A70021F2BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Girlfull;
+			productName = Girlfull;
+			productReference = FEFAE7581807F1A70021F2BC /* Girlfull.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEFAE7801807F1A70021F2BC /* GirlfullTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFAE7961807F1A70021F2BC /* Build configuration list for PBXNativeTarget "GirlfullTests" */;
+			buildPhases = (
+				FEFAE77C1807F1A70021F2BC /* Sources */,
+				FEFAE77D1807F1A70021F2BC /* Frameworks */,
+				FEFAE77E1807F1A70021F2BC /* Resources */,
+				FEFAE77F1807F1A70021F2BC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEFAE7871807F1A70021F2BC /* PBXTargetDependency */,
+			);
+			name = GirlfullTests;
+			productName = GirlfullTests;
+			productReference = FEFAE7811807F1A70021F2BC /* GirlfullTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEFAE7501807F1A70021F2BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Sahi;
+			};
+			buildConfigurationList = FEFAE7531807F1A70021F2BC /* Build configuration list for PBXProject "Girlfull" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FEFAE74F1807F1A70021F2BC;
+			productRefGroup = FEFAE7591807F1A70021F2BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEFAE7571807F1A70021F2BC /* Girlfull */,
+				FEFAE7801807F1A70021F2BC /* GirlfullTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEFAE7561807F1A70021F2BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFAE7661807F1A70021F2BC /* InfoPlist.strings in Resources */,
+				FEFAE76E1807F1A70021F2BC /* Default.png in Resources */,
+				FEFAE7701807F1A70021F2BC /* Default@2x.png in Resources */,
+				FEFAE7721807F1A70021F2BC /* Default-568h@2x.png in Resources */,
+				FEFAE7AF18081F3B0021F2BC /* voice1.mp3 in Resources */,
+				FEFAE7B018081F3B0021F2BC /* end.mp3 in Resources */,
+				FEFAE7B118081F3B0021F2BC /* test.mp3 in Resources */,
+				FEFAE7C0180829160021F2BC /* box.png in Resources */,
+				FEFAE7C2180829160021F2BC /* end.png in Resources */,
+				FEFAE7C4180829160021F2BC /* heart.png in Resources */,
+				FEFAE7C6180829160021F2BC /* girl.png in Resources */,
+				FEFAE7C8180829160021F2BC /* test.png in Resources */,
+				FEFAE7C9180829160021F2BC /* title.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFAE77E1807F1A70021F2BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFAE78D1807F1A70021F2BC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FEFAE77F1807F1A70021F2BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEFAE7541807F1A70021F2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFAE7681807F1A70021F2BC /* main.m in Sources */,
+				FEFAE76C1807F1A70021F2BC /* AppDelegate.m in Sources */,
+				FEFAE79B1807F2E10021F2BC /* TopViewController.m in Sources */,
+				FEFAE79E1807F2F80021F2BC /* FuruViewController.m in Sources */,
+				FEFAE7A11807F3120021F2BC /* EndViewController.m in Sources */,
+				FEFAE7A5180805260021F2BC /* GirlPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFAE77C1807F1A70021F2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFAE7901807F1A70021F2BC /* GirlfullTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEFAE7871807F1A70021F2BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEFAE7571807F1A70021F2BC /* Girlfull */;
+			targetProxy = FEFAE7861807F1A70021F2BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEFAE7641807F1A70021F2BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFAE7651807F1A70021F2BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FEFAE78B1807F1A70021F2BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFAE78C1807F1A70021F2BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEFAE7911807F1A70021F2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEFAE7921807F1A70021F2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEFAE7941807F1A70021F2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Girlfull/Girlfull-Prefix.pch";
+				INFOPLIST_FILE = "Girlfull/Girlfull-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEFAE7951807F1A70021F2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Girlfull/Girlfull-Prefix.pch";
+				INFOPLIST_FILE = "Girlfull/Girlfull-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FEFAE7971807F1A70021F2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Girlfull.app/Girlfull";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Girlfull/Girlfull-Prefix.pch";
+				INFOPLIST_FILE = "GirlfullTests/GirlfullTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FEFAE7981807F1A70021F2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Girlfull.app/Girlfull";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Girlfull/Girlfull-Prefix.pch";
+				INFOPLIST_FILE = "GirlfullTests/GirlfullTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEFAE7531807F1A70021F2BC /* Build configuration list for PBXProject "Girlfull" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFAE7911807F1A70021F2BC /* Debug */,
+				FEFAE7921807F1A70021F2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEFAE7931807F1A70021F2BC /* Build configuration list for PBXNativeTarget "Girlfull" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFAE7941807F1A70021F2BC /* Debug */,
+				FEFAE7951807F1A70021F2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FEFAE7961807F1A70021F2BC /* Build configuration list for PBXNativeTarget "GirlfullTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFAE7971807F1A70021F2BC /* Debug */,
+				FEFAE7981807F1A70021F2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEFAE7501807F1A70021F2BC /* Project object */;
+}
